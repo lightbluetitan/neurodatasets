@@ -1,0 +1,8 @@
+bibentry(
+  bibtype = "Manual",
+  title = "NeuroDataSets: A Comprehensive Collection of Brain and Neuroscience-Related Datasets",
+  author = person(given = "Renzo", family = "Caceres Rossi"),
+  year = 2025,
+  note = "R package version 0.1.0",
+  url = "https://github.com/lightbluetitan/neurodatasets"
+)

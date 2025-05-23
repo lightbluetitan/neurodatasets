@@ -1,0 +1,6 @@
+pandoc: '3.4'
+pkgdown: 2.1.2
+pkgdown_sha: ~
+articles:
+  introduction_to_neurodatasets: introduction_to_neurodatasets.html
+last_built: 2025-05-23T07:07Z
