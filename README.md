@@ -56,7 +56,7 @@ library(NeuroDataSets)
 
 # List all datasets in the package
 
-view_datasets_neuro()
+view_datasets_NeuroDataSets()
 
 # Load dataset
 

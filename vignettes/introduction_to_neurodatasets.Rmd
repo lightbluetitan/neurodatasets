@@ -1,8 +1,8 @@
 ---
-title: "Introduction_to_NeuroDataSets"
+title: "NeuroDataSets: A Comprehensive Collection of Neuroscience and Brain-Related Datasets"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Introduction_to_NeuroDataSets}
+  %\VignetteIndexEntry{NeuroDataSets: A Comprehensive Collection of Neuroscience and Brain-Related Datasets}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -25,6 +25,17 @@ library(ggplot2)
 The `NeuroDataSets` package offers a rich and diverse collection of datasets focused on the brain, the nervous system, and neurological and psychiatric disorders. It includes data on conditions such as **Parkinson's disease, Alzheimer's disease, epilepsy, schizophrenia, gliomas, and mental health**.
 
 The package contains a wide variety of data types, including clinical, experimental, neuroimaging, behavioral, cognitive, and simulated datasets. These datasets encompass structural and functional **brain data, neurotransmission metrics, gene expression profiles, cognitive performance assessments, and treatment outcomes**.
+
+## All datasets within NeuroDataSets
+
+```{r NeuroDataSets-datasets,echo = TRUE,message = FALSE,warning = FALSE,results = 'markup'}
+
+
+view_datasets_NeuroDataSets()
+
+
+```
+
 
 ## Dataset Suffixes
 
@@ -49,7 +60,7 @@ Below are selected example datasets included in the `NeuroDataSets` package:
 - `hippocampus_lesions_df`: Memory and the Hippocampus.
 
 
-## Data Visualization with CardioDataSets Data
+## Data Visualization with NeuroDataSets Data
 
 ###  Patterns of Subcortical Structures
 

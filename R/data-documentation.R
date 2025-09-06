@@ -1,5 +1,5 @@
 # NeuroDataSets - A Comprehensive Collection of Neuroscience and Brain-Related Datasets
-# Version 0.1.0
+# Version 0.2.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -355,14 +355,14 @@ NULL
 
 #' BRAiNS Cohort Cognitive States Matrix
 #'
-#' This dataset, brains_cognitive_matrix, is a matrix containing the states and covariates
+#' This dataset, \code{brains_cognitive_matrix}, is a matrix containing the states and covariates
 #' of 649 participants enrolled in the BRAiNS cohort at the University of Kentucky's
 #' Alzheimer's Disease Research Center. The data includes longitudinal cognitive assessments
 #' and various health covariates across multiple visits.
 #'
-#' The dataset name has been kept as 'brains_cognitive_matrix' to avoid confusion
+#' The dataset name has been kept as \code{brains_cognitive_matrix} to avoid confusion
 #' with other datasets in the R ecosystem. This naming convention helps distinguish
-#' this dataset as part of the NeuroDataSets package. The suffix 'matrix' indicates
+#' this dataset as part of the \pkg{NeuroDataSets} package. The suffix \code{matrix} indicates
 #' that the dataset is a matrix. The original content has not been modified.
 #'
 #' @name brains_cognitive_matrix
@@ -375,14 +375,14 @@ NULL
 #'   \item{bagec}{Integer: Baseline age centered}
 #'   \item{famhx}{Integer: Family history of dementia (0 = No, 1 = Yes)}
 #'   \item{HBP}{Integer: History of high blood pressure (0 = No, 1 = Yes)}
-#'   \item{apoe4}{Integer: APOE ε4 allele carrier status (0 = Non-carrier, 1 = Carrier)}
+#'   \item{apoe4}{Integer: APOE \eqn{\varepsilon_4} allele carrier status (0 = Non-carrier, 1 = Carrier)}
 #'   \item{smk1}{Integer: Smoking status indicator 1}
 #'   \item{smk2}{Integer: Smoking status indicator 2}
 #'   \item{smk3}{Integer: Smoking status indicator 3}
 #'   \item{lowed}{Integer: Low education indicator (0 = No, 1 = Yes)}
 #'   \item{headinj}{Integer: History of head injury (0 = No, 1 = Yes)}
 #' }
-#' @source Data taken from the RRMLRfMC package version 0.4.0. Original study:
+#' @source Data taken from the \pkg{RRMLRfMC} package version 0.4.0. Original study:
 #' University of Kentucky's Alzheimer's Disease Research Center BRAiNS cohort.
 #' @usage data(brains_cognitive_matrix)
 #' @export
@@ -539,22 +539,22 @@ NULL
 
 #' Mammal Brain Size and Litter Size Relationship
 #'
-#' This dataset, brain_litter_mammals_df, is a data frame comparing relative brain weights
+#' This dataset, \code{brain_litter_mammals_df}, is a data frame comparing relative brain weights
 #' between 96 mammalian species divided by reproductive strategy: 51 species with small litters
-#' (<2 offspring) and 45 species with large litters (≥2 offspring).
+#' (\eqn{< 2} offspring) and 45 species with large litters (\eqn{\geq 2} offspring).
 #'
-#' The dataset name has been kept as 'brain_litter_mammals_df' to avoid confusion
+#' The dataset name has been kept as \code{brain_litter_mammals_df} to avoid confusion
 #' with other datasets in the R ecosystem. This naming convention helps distinguish
-#' this dataset as part of the NeuroDataSets package. The suffix 'df' indicates
+#' this dataset as part of the \pkg{NeuroDataSets} package. The suffix \code{df} indicates
 #' that the dataset is a data frame. The original content has not been modified.
 #'
 #' @name brain_litter_mammals_df
 #' @format A data frame with 96 observations and 2 variables:
 #' \describe{
 #'   \item{BrainSize}{Numeric: Relative brain weight measurement (encephalization quotient or similar metric)}
-#'   \item{LitterSize}{Factor with 2 levels: Reproductive strategy ("Small" (<2) and "Large" (≥2) litter sizes)}
+#'   \item{LitterSize}{Factor with 2 levels: Reproductive strategy ("Small" (\eqn{< 2}) and "Large" (\eqn{\geq 2}) litter sizes)}
 #' }
-#' @source Data taken from the Sleuth3 package version 1.0-6. Original reference:
+#' @source Data taken from the \pkg{Sleuth3} package version 1.0-6. Original reference:
 #' Ramsey, F.L. and Schafer, D.W. (2002) \emph{The Statistical Sleuth: A Course in Methods
 #' of Data Analysis} (2nd ed), Duxbury.
 #' @usage data(brain_litter_mammals_df)
@@ -962,24 +962,24 @@ NULL
 
 
 
-#' Dopamine β-Hydroxylase Activity in Schizophrenia
+#' Dopamine \eqn{\beta}-Hydroxylase Activity in Schizophrenia
 #'
-#' This dataset, dopamine_schizophrenia_tbl_df, is a tibble containing measurements
-#' of dopamine β-hydroxylase (DBH) activity in 25 schizophrenic patients treated
+#' This dataset, `dopamine_schizophrenia_tbl_df`, is a tibble containing measurements
+#' of dopamine \eqn{\beta}-hydroxylase (DBH) activity in 25 schizophrenic patients treated
 #' with antipsychotic medication. The data compares DBH levels between patient groups.
 #'
-#' The dataset name has been kept as 'dopamine_schizophrenia_tbl_df' to avoid confusion
+#' The dataset name has been kept as \code{dopamine_schizophrenia_tbl_df} to avoid confusion
 #' with other datasets in the R ecosystem. This naming convention helps distinguish
-#' this dataset as part of the NeuroDataSets package. The suffix 'tbl_df' indicates
+#' this dataset as part of the \pkg{NeuroDataSets} package. The suffix \code{tbl_df} indicates
 #' that the dataset is a tibble. The original content has not been modified.
 #'
 #' @name dopamine_schizophrenia_tbl_df
 #' @format A tibble with 25 observations and 2 variables:
 #' \describe{
-#'   \item{dbh}{Integer: Dopamine β-hydroxylase activity level (nmol/(mL·hr))}
+#'   \item{dbh}{Integer: Dopamine \eqn{\beta}-hydroxylase activity level (nmol/(mL\eqn{\cdot}hr))}
 #'   \item{group}{Character: Treatment/patient group classification}
 #' }
-#' @source Data taken from the BSDA package version 1.2.2
+#' @source Data taken from the \pkg{BSDA} package version 1.2.2
 #' @usage data(dopamine_schizophrenia_tbl_df)
 #' @export
 load("data/dopamine_schizophrenia_tbl_df.rda")

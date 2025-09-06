@@ -7,11 +7,11 @@
 A data frame with 96 observations and 2 variables:
 \describe{
   \item{BrainSize}{Numeric: Relative brain weight measurement (encephalization quotient or similar metric)}
-  \item{LitterSize}{Factor with 2 levels: Reproductive strategy ("Small" (<2) and "Large" (≥2) litter sizes)}
+  \item{LitterSize}{Factor with 2 levels: Reproductive strategy ("Small" (\eqn{< 2}) and "Large" (\eqn{\geq 2}) litter sizes)}
 }
 }
 \source{
-Data taken from the Sleuth3 package version 1.0-6. Original reference:
+Data taken from the \pkg{Sleuth3} package version 1.0-6. Original reference:
 Ramsey, F.L. and Schafer, D.W. (2002) \emph{The Statistical Sleuth: A Course in Methods
 of Data Analysis} (2nd ed), Duxbury.
 }
@@ -19,13 +19,13 @@ of Data Analysis} (2nd ed), Duxbury.
 data(brain_litter_mammals_df)
 }
 \description{
-This dataset, brain_litter_mammals_df, is a data frame comparing relative brain weights
+This dataset, \code{brain_litter_mammals_df}, is a data frame comparing relative brain weights
 between 96 mammalian species divided by reproductive strategy: 51 species with small litters
-(<2 offspring) and 45 species with large litters (≥2 offspring).
+(\eqn{< 2} offspring) and 45 species with large litters (\eqn{\geq 2} offspring).
 }
 \details{
-The dataset name has been kept as 'brain_litter_mammals_df' to avoid confusion
+The dataset name has been kept as \code{brain_litter_mammals_df} to avoid confusion
 with other datasets in the R ecosystem. This naming convention helps distinguish
-this dataset as part of the NeuroDataSets package. The suffix 'df' indicates
+this dataset as part of the \pkg{NeuroDataSets} package. The suffix \code{df} indicates
 that the dataset is a data frame. The original content has not been modified.
 }

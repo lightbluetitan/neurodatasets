@@ -1,7 +1,7 @@
 Package: NeuroDataSets
 Type: Package
 Title: A Comprehensive Collection of Neuroscience and Brain-Related Datasets
-Version: 0.1.0
+Version: 0.2.0
 Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
 Description: Offers a rich and diverse collection of datasets focused on the brain, nervous system, and related disorders. 
     The package includes clinical, experimental, neuroimaging, behavioral, cognitive, and simulated data on conditions such as Parkinson's disease, Alzheimer's, epilepsy, schizophrenia, gliomas, and mental health.
@@ -9,7 +9,7 @@ Description: Offers a rich and diverse collection of datasets focused on the bra
     Designed for researchers, neuroscientists, clinicians, psychologists, data scientists, and students, this package facilitates exploratory data analysis, statistical modeling, and hypothesis testing in neuroscience and neuroepidemiology.
 License: GPL-3
 Language: en
-URL: https://github.com/lightbluetitan/neurodatasets
+URL: https://github.com/lightbluetitan/neurodatasets, https://lightbluetitan.github.io/neurodatasets/
 BugReports: https://github.com/lightbluetitan/neurodatasets/issues
 Encoding: UTF-8
 LazyData: true
@@ -27,7 +27,8 @@ Authors@R:
         given = "Renzo",
         family = "Caceres Rossi",
         role = c("aut", "cre"),
-        email = "arenzocaceresrossi@gmail.com"
+        email = "arenzocaceresrossi@gmail.com",
+        comment = c(ORCID = "0009-0005-0744-854X")
     )
 RoxygenNote: 7.3.2
 Config/testthat/edition: 3

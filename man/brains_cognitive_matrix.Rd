@@ -13,7 +13,7 @@ A matrix with 6240 observations and 13 variables:
   \item{bagec}{Integer: Baseline age centered}
   \item{famhx}{Integer: Family history of dementia (0 = No, 1 = Yes)}
   \item{HBP}{Integer: History of high blood pressure (0 = No, 1 = Yes)}
-  \item{apoe4}{Integer: APOE ε4 allele carrier status (0 = Non-carrier, 1 = Carrier)}
+  \item{apoe4}{Integer: APOE \eqn{\varepsilon_4} allele carrier status (0 = Non-carrier, 1 = Carrier)}
   \item{smk1}{Integer: Smoking status indicator 1}
   \item{smk2}{Integer: Smoking status indicator 2}
   \item{smk3}{Integer: Smoking status indicator 3}
@@ -22,21 +22,21 @@ A matrix with 6240 observations and 13 variables:
 }
 }
 \source{
-Data taken from the RRMLRfMC package version 0.4.0. Original study:
+Data taken from the \pkg{RRMLRfMC} package version 0.4.0. Original study:
 University of Kentucky's Alzheimer's Disease Research Center BRAiNS cohort.
 }
 \usage{
 data(brains_cognitive_matrix)
 }
 \description{
-This dataset, brains_cognitive_matrix, is a matrix containing the states and covariates
+This dataset, \code{brains_cognitive_matrix}, is a matrix containing the states and covariates
 of 649 participants enrolled in the BRAiNS cohort at the University of Kentucky's
 Alzheimer's Disease Research Center. The data includes longitudinal cognitive assessments
 and various health covariates across multiple visits.
 }
 \details{
-The dataset name has been kept as 'brains_cognitive_matrix' to avoid confusion
+The dataset name has been kept as \code{brains_cognitive_matrix} to avoid confusion
 with other datasets in the R ecosystem. This naming convention helps distinguish
-this dataset as part of the NeuroDataSets package. The suffix 'matrix' indicates
+this dataset as part of the \pkg{NeuroDataSets} package. The suffix \code{matrix} indicates
 that the dataset is a matrix. The original content has not been modified.
 }

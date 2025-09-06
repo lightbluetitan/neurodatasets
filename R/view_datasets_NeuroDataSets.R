@@ -1,5 +1,5 @@
 # NeuroDataSets - A Comprehensive Collection of Neuroscience and Brain-Related Datasets
-# Version 0.1.0
+# Version 0.2.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -26,10 +26,10 @@
 #' @examples
 #' if (requireNamespace("NeuroDataSets", quietly = TRUE)) {
 #'   library(NeuroDataSets)
-#'   view_datasets_neuro()
+#'   view_datasets_NeuroDataSets()
 #' }
 #' @export
-view_datasets_neuro <- function() {
+view_datasets_NeuroDataSets <- function() {
   # Check if the package is loaded
   if (!"NeuroDataSets" %in% .packages()) {
     stop("The 'NeuroDataSets' package must be loaded to view its datasets.")
