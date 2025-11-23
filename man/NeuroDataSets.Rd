@@ -7,7 +7,7 @@
 \title{NeuroDataSets: A Comprehensive Collection of Neuroscience and Brain-Related Datasets}
 \description{
 {
-This package provides a wide variety of datasets focused on the brain, nervous system, and related disorders including Parkinson's disease, Alzheimer's, epilepsy, schizophrenia, gliomas, and mental health.
+This package provides a diverse collection of datasets focused on the brain, nervous system, and related disorders. The package includes clinical, experimental, neuroimaging, behavioral, and cognitive data on conditions including Parkinson's, Alzheimer's, epilepsy, schizophrenia, autism, ADHD, Tourette's, TBI, brain tumors, migraines, sleep disorders, and mental health.
 }
 }
 \details{

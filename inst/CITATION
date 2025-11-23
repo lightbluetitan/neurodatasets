@@ -7,6 +7,6 @@ bibentry(
     comment = c(ORCID = "0009-0005-0744-854X")
   ),
   year = 2025,
-  note = "R package version 0.2.0",
+  note = "R package version 0.3.0",
   url = "https://github.com/lightbluetitan/neurodatasets"
 )

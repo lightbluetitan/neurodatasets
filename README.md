@@ -1,10 +1,15 @@
 # NeuroDataSets
 
-The `NeuroDataSets` package offers a rich and diverse collection of datasets focused on the brain, the nervous system, and neurological and psychiatric disorders.
-It includes data on conditions such as **Parkinson's disease, Alzheimer's disease, epilepsy, schizophrenia, gliomas, and mental health**.
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![CRAN downloads](https://cranlogs.r-pkg.org/badges/NeuroDataSets)](https://cran.r-project.org/package=NeuroDataSets)
+[![CRAN total downloads](https://cranlogs.r-pkg.org/badges/grand-total/NeuroDataSets)](https://cran.r-project.org/package=NeuroDataSets)
 
-The package contains a wide variety of data types, including clinical, experimental, neuroimaging, behavioral, 
-cognitive, and simulated datasets. These datasets encompass structural and functional **brain data, neurotransmission metrics, gene expression profiles, cognitive performance assessments, and treatment outcomes**.
+---
+
+The `NeuroDataSets` package offers a rich and diverse collection of datasets focused on the brain, the nervous system, and neurological and psychiatric disorders. It includes comprehensive data on conditions such as **Parkinson's disease, Alzheimer's disease, dementia, epilepsy, schizophrenia, autism spectrum disorder, attention deficit hyperactivity disorder (ADHD), Tourette's syndrome, traumatic brain injury, gliomas, migraines, headaches, sleep disorders, concussions, encephalitis, subarachnoid hemorrhage, and mental health conditions**.
+
+The package contains a wide variety of data types, including clinical, experimental, neuroimaging, behavioral, cognitive, and simulated datasets. These datasets encompass **structural and functional brain data, cross-sectional and longitudinal MRI imaging studies, neurotransmission metrics, gene expression profiles, cognitive performance assessments, intelligence metrics, sleep deprivation effects, treatment outcomes, brain-body relationships across species, neurological injury patterns, and acupuncture interventions**.
+
 
 ## Installation
 
@@ -13,6 +18,14 @@ You can install the `NeuroDataSets` package from CRAN with the following R funct
 ```R
 
 install.packages("NeuroDataSets")
+
+```
+
+You can install `NeuroDataSets` package from its GitHub repository with the following R function:
+
+```R
+
+devtools::install_github("lightbluetitan/neurodatasets")
 
 ```
 
@@ -42,7 +55,7 @@ Below are selected example datasets included in the `NeuroDataSets` package:
 
 - `subcortical_patterns_tbl_df`: Patterns of Subcortical Structures.
 
-- `white_matter_patterns_tbl_df`: Expected Patterns of White Matter.
+- `WMpatterns_tbl_df`: Expected Patterns of White Matter.
 
 - `hippocampus_lesions_df`: Memory and the Hippocampus.
 
@@ -60,14 +73,14 @@ view_datasets_NeuroDataSets()
 
 # Load dataset
 
-data(white_matter_patterns_tbl_df)
+data(WMpatterns_tbl_df)
 
 # Preview the dataset
 
-head(white_matter_patterns_tbl_df)
+head(WMpatterns_tbl_df)
 
 # Open in Viewer
 
-View(white_matter_patterns_tbl_df)
+View(WMpatterns_tbl_df)
 
 ```

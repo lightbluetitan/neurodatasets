@@ -22,9 +22,11 @@ library(ggplot2)
 
 # Introduction
 
-The `NeuroDataSets` package offers a rich and diverse collection of datasets focused on the brain, the nervous system, and neurological and psychiatric disorders. It includes data on conditions such as **Parkinson's disease, Alzheimer's disease, epilepsy, schizophrenia, gliomas, and mental health**.
+The `NeuroDataSets` package offers a rich and diverse collection of datasets focused on the brain, the nervous system, and neurological and psychiatric disorders. It includes comprehensive data on conditions such as **Parkinson's disease, Alzheimer's disease, dementia, epilepsy, schizophrenia, autism spectrum disorder, attention deficit hyperactivity disorder (ADHD), Tourette's syndrome, traumatic brain injury, gliomas, migraines, headaches, sleep disorders, concussions, encephalitis, subarachnoid hemorrhage, and mental health conditions**.
 
-The package contains a wide variety of data types, including clinical, experimental, neuroimaging, behavioral, cognitive, and simulated datasets. These datasets encompass structural and functional **brain data, neurotransmission metrics, gene expression profiles, cognitive performance assessments, and treatment outcomes**.
+The package contains a wide variety of data types, including clinical, experimental, neuroimaging, behavioral, cognitive, and simulated datasets. These datasets encompass **structural and functional brain data, cross-sectional and longitudinal MRI imaging studies, neurotransmission metrics, gene expression profiles, cognitive performance assessments, intelligence metrics, sleep deprivation effects, treatment outcomes, brain-body relationships across species, neurological injury patterns, and acupuncture interventions**.
+
+**Designed for researchers, neuroscientists, clinicians, psychologists, data scientists, and students**, this package facilitates exploratory data analysis, statistical modeling, machine learning applications, and hypothesis testing in neuroscience and neuroepidemiology.
 
 ## All datasets within NeuroDataSets
 
@@ -55,7 +57,7 @@ Below are selected example datasets included in the `NeuroDataSets` package:
 
 - `subcortical_patterns_tbl_df`: Patterns of Subcortical Structures.
 
-- `white_matter_patterns_tbl_df`: Expected Patterns of White Matter.
+- `WMpatterns_tbl_df`: Expected Patterns of White Matter.
 
 - `hippocampus_lesions_df`: Memory and the Hippocampus.
 
@@ -101,7 +103,7 @@ ggplot(long_data, aes(x = Condition, y = Subcortical, fill = Value)) +
 ```{r white-matter-plot, fig.width=6, fig.height=4.5, out.width="90%"}
 
 # Compute mean values using updated anonymous function syntax
-summary_data <- white_matter_patterns_tbl_df %>%
+summary_data <- WMpatterns_tbl_df %>%
   select(-WM) %>%
   summarise(across(everything(), \(x) mean(x, na.rm = TRUE))) %>%
   as.data.frame()
@@ -147,8 +149,10 @@ ggplot(hippocampus_lesions_df, aes(x = lesion, y = memory)) +
 
 ## Conclusion
 
-The `NeuroDataSets` package offers a rich, curated collection of datasets focused on neuroscience and related disorders. It supports advanced statistical analysis, exploratory data science, and educational purposes by providing well-structured and documented datasets across a variety of neurological and neuropsychiatric conditions.
+The `NeuroDataSets` package offers a comprehensive and curated collection of datasets spanning a wide spectrum of neurological, psychiatric, and cognitive conditions. By integrating data from clinical trials, peer-reviewed research, military health records, sports injury databases, and international comparative studies, this package provides researchers with robust resources for cutting-edge neuroscience research.
 
-For detailed information and full documentation of each dataset, please refer to the reference manual and help files included within the package.
+Whether you are conducting exploratory data analysis, building predictive models, testing statistical hypotheses, or teaching neuroepidemiology and data science, `NeuroDataSets` delivers well-structured, documented, and diverse datasets that reflect the complexity of brain function, neurological disorders, and their treatments.
+
+For detailed information and full documentation of each dataset, including variable descriptions, data sources, and usage examples, please refer to the reference manual and help files included within the package.
 
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;"></div>

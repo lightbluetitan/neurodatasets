@@ -1,5 +1,5 @@
 # NeuroDataSets - A Comprehensive Collection of Neuroscience and Brain-Related Datasets
-# Version 0.2.0
+# Version 0.3.0
 # Copyright (C) 2025 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
@@ -42,7 +42,7 @@ test_that("view_datasets_NeuroDataSets returns expected datasets", {
     "ability_intelligence_list",
     "adolescent_mental_health_df",
     "alzheimer_smoking_df",
-    "alzheimers_biomarkers_tbl_df",
+    "AD_biomarkers_tbl_df",
     "bilingual_brains_df",
     "blood_brain_barrier_df",
     "brain_litter_mammals_df",
@@ -50,12 +50,12 @@ test_that("view_datasets_NeuroDataSets returns expected datasets", {
     "brain_string_players_df",
     "brains_cognitive_matrix",
     "cocaine_dopamine_df",
-    "dopamine_schizophrenia_tbl_df",
+    "DA_schizophrenia_tbl_df",
     "epilepsy_drug_qol_df",
     "epilepsy_drug_trial_df",
     "epilepsy_RCT_tbl_df",
     "gm_expected_patterns_tbl_df",
-    "guineapig_neurotransmission_df",
+    "guineapig_neuro_df",
     "hippocampus_lesions_df",
     "mammals_brain_body_df",
     "markers_brain_df",
@@ -64,13 +64,35 @@ test_that("view_datasets_NeuroDataSets returns expected datasets", {
     "migraine_treatment_df",
     "neanderthal_brains_df",
     "neuro_pointprocess_matrix",
-    "neurocognitive_psychiatric_df",
-    "oasis_dementia_mri_df",
+    "psych_neurocog_df",
     "parkinsons_dopamine_list",
     "pediatric_glioma_tbl_df",
     "sleep_performance_df",
     "subcortical_patterns_tbl_df",
-    "white_matter_patterns_tbl_df"
+    "WMpatterns_tbl_df",
+    "dementia_df",
+    "ADHD_df",
+    "chimpbrains_df",
+    "brainexpression_df",
+    "cerebellar_age_df",
+    "tourette_ADHD_df",
+    "encephalitis_df",
+    "SAHemorrhage_df",
+    "brainvolume_df",
+    "TBI_steroids_df",
+    "migraines_df",
+    "acupuncture_df",
+    "migrane_dose_df",
+    "neurodeg_dose_df",
+    "sleep_disorder_df",
+    "sleep_deprivation_tbl_df",
+    "OASIS_cross_tbl_df",
+    "OASIS_long_tbl_df",
+    "iq_country_tbl_df",
+    "nfl_concussions_tbl_df",
+    "ASD_risks_tbl_df",
+    "TBI_age_tbl_df",
+    "TBI_military_tbl_df"
 
 
   )

@@ -25,7 +25,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">NeuroDataSets</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,14 +86,27 @@
 </h2>
 <p>The <code>NeuroDataSets</code> package offers a rich and diverse
 collection of datasets focused on the brain, the nervous system, and
-neurological and psychiatric disorders. It includes data on conditions
-such as <strong>Parkinson’s disease, Alzheimer’s disease, epilepsy,
-schizophrenia, gliomas, and mental health</strong>.</p>
+neurological and psychiatric disorders. It includes comprehensive data
+on conditions such as <strong>Parkinson’s disease, Alzheimer’s disease,
+dementia, epilepsy, schizophrenia, autism spectrum disorder, attention
+deficit hyperactivity disorder (ADHD), Tourette’s syndrome, traumatic
+brain injury, gliomas, migraines, headaches, sleep disorders,
+concussions, encephalitis, subarachnoid hemorrhage, and mental health
+conditions</strong>.</p>
 <p>The package contains a wide variety of data types, including
 clinical, experimental, neuroimaging, behavioral, cognitive, and
-simulated datasets. These datasets encompass structural and functional
-<strong>brain data, neurotransmission metrics, gene expression profiles,
-cognitive performance assessments, and treatment outcomes</strong>.</p>
+simulated datasets. These datasets encompass <strong>structural and
+functional brain data, cross-sectional and longitudinal MRI imaging
+studies, neurotransmission metrics, gene expression profiles, cognitive
+performance assessments, intelligence metrics, sleep deprivation
+effects, treatment outcomes, brain-body relationships across species,
+neurological injury patterns, and acupuncture
+interventions</strong>.</p>
+<p><strong>Designed for researchers, neuroscientists, clinicians,
+psychologists, data scientists, and students</strong>, this package
+facilitates exploratory data analysis, statistical modeling, machine
+learning applications, and hypothesis testing in neuroscience and
+neuroepidemiology.</p>
 <div class="section level3">
 <h3 id="all-datasets-within-neurodatasets">All datasets within NeuroDataSets<a class="anchor" aria-label="anchor" href="#all-datasets-within-neurodatasets"></a>
 </h3>
@@ -101,23 +114,34 @@ cognitive performance assessments, and treatment outcomes</strong>.</p>
 <code class="sourceCode R"><span></span>
 <span></span>
 <span><span class="fu"><a href="../reference/view_datasets_NeuroDataSets.html">view_datasets_NeuroDataSets</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "aba_phenotype_data_df"          "ability_intelligence_list"     </span></span>
-<span><span class="co">#&gt;  [3] "adolescent_mental_health_df"    "alzheimer_smoking_df"          </span></span>
-<span><span class="co">#&gt;  [5] "alzheimers_biomarkers_tbl_df"   "bilingual_brains_df"           </span></span>
-<span><span class="co">#&gt;  [7] "blood_brain_barrier_df"         "brain_litter_mammals_df"       </span></span>
-<span><span class="co">#&gt;  [9] "brain_size_iq_df"               "brain_string_players_df"       </span></span>
-<span><span class="co">#&gt; [11] "brains_cognitive_matrix"        "cocaine_dopamine_df"           </span></span>
-<span><span class="co">#&gt; [13] "dopamine_schizophrenia_tbl_df"  "epilepsy_RCT_tbl_df"           </span></span>
-<span><span class="co">#&gt; [15] "epilepsy_drug_qol_df"           "epilepsy_drug_trial_df"        </span></span>
-<span><span class="co">#&gt; [17] "gm_expected_patterns_tbl_df"    "guineapig_neurotransmission_df"</span></span>
-<span><span class="co">#&gt; [19] "hippocampus_lesions_df"         "mammals_brain_body_df"         </span></span>
-<span><span class="co">#&gt; [21] "markers_brain_df"               "markers_human_brain_df"        </span></span>
-<span><span class="co">#&gt; [23] "markers_mouse_brain_df"         "migraine_treatment_df"         </span></span>
-<span><span class="co">#&gt; [25] "neanderthal_brains_df"          "neuro_pointprocess_matrix"     </span></span>
-<span><span class="co">#&gt; [27] "neurocognitive_psychiatric_df"  "oasis_dementia_mri_df"         </span></span>
-<span><span class="co">#&gt; [29] "parkinsons_dopamine_list"       "pediatric_glioma_tbl_df"       </span></span>
-<span><span class="co">#&gt; [31] "sleep_performance_df"           "subcortical_patterns_tbl_df"   </span></span>
-<span><span class="co">#&gt; [33] "white_matter_patterns_tbl_df"</span></span></code></pre></div>
+<span><span class="co">#&gt;  [1] "ADHD_df"                     "AD_biomarkers_tbl_df"       </span></span>
+<span><span class="co">#&gt;  [3] "ASD_risks_tbl_df"            "DA_schizophrenia_tbl_df"    </span></span>
+<span><span class="co">#&gt;  [5] "OASIS_cross_tbl_df"          "OASIS_long_tbl_df"          </span></span>
+<span><span class="co">#&gt;  [7] "SAHemorrhage_df"             "TBI_age_tbl_df"             </span></span>
+<span><span class="co">#&gt;  [9] "TBI_military_tbl_df"         "TBI_steroids_df"            </span></span>
+<span><span class="co">#&gt; [11] "WMpatterns_tbl_df"           "aba_phenotype_data_df"      </span></span>
+<span><span class="co">#&gt; [13] "ability_intelligence_list"   "acupuncture_df"             </span></span>
+<span><span class="co">#&gt; [15] "adolescent_mental_health_df" "alzheimer_smoking_df"       </span></span>
+<span><span class="co">#&gt; [17] "bilingual_brains_df"         "blood_brain_barrier_df"     </span></span>
+<span><span class="co">#&gt; [19] "brain_litter_mammals_df"     "brain_size_iq_df"           </span></span>
+<span><span class="co">#&gt; [21] "brain_string_players_df"     "brainexpression_df"         </span></span>
+<span><span class="co">#&gt; [23] "brains_cognitive_matrix"     "brainvolume_df"             </span></span>
+<span><span class="co">#&gt; [25] "cerebellar_age_df"           "chimpbrains_df"             </span></span>
+<span><span class="co">#&gt; [27] "cocaine_dopamine_df"         "dementia_df"                </span></span>
+<span><span class="co">#&gt; [29] "encephalitis_df"             "epilepsy_RCT_tbl_df"        </span></span>
+<span><span class="co">#&gt; [31] "epilepsy_drug_qol_df"        "epilepsy_drug_trial_df"     </span></span>
+<span><span class="co">#&gt; [33] "gm_expected_patterns_tbl_df" "guineapig_neuro_df"         </span></span>
+<span><span class="co">#&gt; [35] "hippocampus_lesions_df"      "iq_country_tbl_df"          </span></span>
+<span><span class="co">#&gt; [37] "mammals_brain_body_df"       "markers_brain_df"           </span></span>
+<span><span class="co">#&gt; [39] "markers_human_brain_df"      "markers_mouse_brain_df"     </span></span>
+<span><span class="co">#&gt; [41] "migraine_treatment_df"       "migraines_df"               </span></span>
+<span><span class="co">#&gt; [43] "migrane_dose_df"             "neanderthal_brains_df"      </span></span>
+<span><span class="co">#&gt; [45] "neuro_pointprocess_matrix"   "neurodeg_dose_df"           </span></span>
+<span><span class="co">#&gt; [47] "nfl_concussions_tbl_df"      "parkinsons_dopamine_list"   </span></span>
+<span><span class="co">#&gt; [49] "pediatric_glioma_tbl_df"     "psych_neurocog_df"          </span></span>
+<span><span class="co">#&gt; [51] "sleep_deprivation_tbl_df"    "sleep_disorder_df"          </span></span>
+<span><span class="co">#&gt; [53] "sleep_performance_df"        "subcortical_patterns_tbl_df"</span></span>
+<span><span class="co">#&gt; [55] "tourette_ADHD_df"</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="dataset-suffixes">Dataset Suffixes<a class="anchor" aria-label="anchor" href="#dataset-suffixes"></a>
@@ -139,8 +163,8 @@ cognitive performance assessments, and treatment outcomes</strong>.</p>
 <ul>
 <li><p><code>subcortical_patterns_tbl_df</code>: Patterns of Subcortical
 Structures.</p></li>
-<li><p><code>white_matter_patterns_tbl_df</code>: Expected Patterns of
-White Matter.</p></li>
+<li><p><code>WMpatterns_tbl_df</code>: Expected Patterns of White
+Matter.</p></li>
 <li><p><code>hippocampus_lesions_df</code>: Memory and the
 Hippocampus.</p></li>
 </ul>
@@ -187,7 +211,7 @@ Hippocampus.</p></li>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span><span class="co"># Compute mean values using updated anonymous function syntax</span></span>
-<span><span class="va">summary_data</span> <span class="op">&lt;-</span> <span class="va">white_matter_patterns_tbl_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span><span class="va">summary_data</span> <span class="op">&lt;-</span> <span class="va">WMpatterns_tbl_df</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="op">-</span><span class="va">WM</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html" class="external-link">across</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/everything.html" class="external-link">everything</a></span><span class="op">(</span><span class="op">)</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">x</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
 <span>  <span class="fu"><a href="https://rdrr.io/r/base/as.data.frame.html" class="external-link">as.data.frame</a></span><span class="op">(</span><span class="op">)</span></span>
@@ -232,13 +256,21 @@ Hippocampus.</p></li>
 <div class="section level3">
 <h3 id="conclusion">Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"></a>
 </h3>
-<p>The <code>NeuroDataSets</code> package offers a rich, curated
-collection of datasets focused on neuroscience and related disorders. It
-supports advanced statistical analysis, exploratory data science, and
-educational purposes by providing well-structured and documented
-datasets across a variety of neurological and neuropsychiatric
-conditions.</p>
+<p>The <code>NeuroDataSets</code> package offers a comprehensive and
+curated collection of datasets spanning a wide spectrum of neurological,
+psychiatric, and cognitive conditions. By integrating data from clinical
+trials, peer-reviewed research, military health records, sports injury
+databases, and international comparative studies, this package provides
+researchers with robust resources for cutting-edge neuroscience
+research.</p>
+<p>Whether you are conducting exploratory data analysis, building
+predictive models, testing statistical hypotheses, or teaching
+neuroepidemiology and data science, <code>NeuroDataSets</code> delivers
+well-structured, documented, and diverse datasets that reflect the
+complexity of brain function, neurological disorders, and their
+treatments.</p>
 <p>For detailed information and full documentation of each dataset,
+including variable descriptions, data sources, and usage examples,
 please refer to the reference manual and help files included within the
 package.</p>
 <div class="tocify-extend-page" data-unique="tocify-extend-page" style="height: 0;">
