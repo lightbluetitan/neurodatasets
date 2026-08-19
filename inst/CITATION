@@ -6,7 +6,7 @@ bibentry(
     family = "Caceres Rossi",
     comment = c(ORCID = "0009-0005-0744-854X")
   ),
-  year = 2025,
-  note = "R package version 0.3.0",
+  year = "2026",
+  note = "R package version 0.3.1",
   url = "https://github.com/lightbluetitan/neurodatasets"
 )

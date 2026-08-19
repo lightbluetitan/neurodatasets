@@ -1,6 +1,6 @@
 # NeuroDataSets - A Comprehensive Collection of Neuroscience and Brain-Related Datasets
-# Version 0.3.0
-# Copyright (C) 2025 Renzo Caceres Rossi
+# Version 0.3.1
+# Copyright (C) 2025-2026 Renzo Caceres Rossi
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

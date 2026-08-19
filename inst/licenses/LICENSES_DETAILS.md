@@ -1,6 +1,6 @@
 # Licensing Information for `NeuroDataSets` Package
 
-This package, `NeuroDataSets`, includes datasets sourced from various R packages. In order to maintain consistency and clarity, a naming convention has been applied where suffixes are added to the dataset names to indicate the type and format of the datasets. The original content of these datasets has not been altered in any way.
+This package, `NeuroDataSets`, includes datasets sourced from various R packages. The original content and structure of these datasets have not been altered in any way.
 
 ## Dataset Licensing Information:
 
@@ -142,38 +142,54 @@ This package, `NeuroDataSets`, includes datasets sourced from various R packages
 - **sleep_disorder_df**: 
   Originally PSG from the MVT package, licensed under GPL-3. The dataset name has been changed to 'sleep_disorder_df' to indicate that this dataset is a data frame object. 
 
-- **pediatric_glioma_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/amraam/pediatric-high-grade-glioma-dataset), licensed under CC0: Public Domain. Contains clinical parameters of 57 pediatric patients with high grade glioma, including tumor size data and outcome variables.
+- **pediatric_glioma_tbl_df** name given to the dataset in the **NeuroDataSets** package. 
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/amraam/pediatric-high-grade-glioma-dataset), licensed under CC0: Public Domain. Contains clinical parameters of 57 pediatric patients with high grade glioma, including tumor size data and outcome variables.
 
 
-- **sleep_deprivation_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/sacramentotechnology/sleep-deprivation-and-cognitive-performance), licensed under CC0: Public Domain. This dataset explores the effects of sleep deprivation on cognitive performance and emotional regulation, based on a 2024 study conducted in the Middle East.
+- **sleep_deprivation_tbl_df** name given to the dataset in the **NeuroDataSets** package. 
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/sacramentotechnology/sleep-deprivation-and-cognitive-performance), licensed under CC0: Public Domain. This dataset explores the effects of sleep deprivation on cognitive performance and emotional regulation, based on a 2024 study conducted in the Middle East.
 
 
-- **OASIS_cross_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers), licensed under CC0: Public Domain. This dataset consists of a cross-sectional collection of 436 subjects aged 18 to 96.
+- **OASIS_cross_tbl_df** name given to the dataset in the **NeuroDataSets** package. 
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers), licensed under CC0: Public Domain. This dataset consists of a cross-sectional collection of 436 subjects aged 18 to 96.
 
-- **OASIS_long_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers), licensed under CC0: Public Domain. This dataset consists of a longitudinal collection of 150 subjects aged 60 to 96.
+- **OASIS_long_tbl_df** name given to the dataset in the **NeuroDataSets** package. 
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/jboysen/mri-and-alzheimers), licensed under CC0: Public Domain. This dataset consists of a longitudinal collection of 150 subjects aged 60 to 96.
 
-- **iq_country_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/mlippo/average-global-iq-per-country-with-other-stats), licensed under CC0: Public Domain. This dataset contains informations about the average IQ in countries around the world.
+- **iq_country_tbl_df** name given to the dataset in the **NeuroDataSets** package. 
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/mlippo/average-global-iq-per-country-with-other-stats), licensed under CC0: Public Domain. This dataset contains informations about the average IQ in countries around the world.
 
-- **nfl_concussions_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/rishidamarla/concussions-in-the-nfl-20122014), licensed under CC0: Public Domain. This dataset contains data about concussion Injuries from 2012-2014 in the NFL.
+- **nfl_concussions_tbl_df** name given to the dataset in the **NeuroDataSets** package. 
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/rishidamarla/concussions-in-the-nfl-20122014), licensed under CC0: Public Domain. This dataset contains data about concussion Injuries from 2012-2014 in the NFL.
 
-- **ASD_risks_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/uppulurimadhuri/dataset), licensed under CC0: Public Domain. This dataset contains factors involved in developing ASD in children.
+- **ASD_risks_tbl_df** name given to the dataset in the **NeuroDataSets** package. 
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/uppulurimadhuri/dataset), licensed under CC0: Public Domain. This dataset contains factors involved in developing ASD in children.
   
-- **TBI_age_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi), licensed under CC0: Public Domain. This dataset contains data from 2014 on mechanisms of brain injury, how they were measured, and both the estimated observed cases and rate of cases/100,000 in 2014.
+- **TBI_age_tbl_df** name given to the dataset in the **NeuroDataSets** package.
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi), licensed under CC0: Public Domain. This dataset contains data from 2014 on mechanisms of brain injury, how they were measured, and both the estimated observed cases and rate of cases/100,000 in 2014.
     
-- **TBI_military_tbl_df**
-  Dataset from Kaggle (https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi), licensed under CC0: Public Domain. This dataset contains the number diagnosed in the category of severity and type of TBI, as well as the year of observation as well as military branch and whether or not the individual was active duty.
+- **TBI_military_tbl_df** name given to the dataset in the **NeuroDataSets** package.
+  Dataset taken from Kaggle (https://www.kaggle.com/datasets/jessemostipak/traumatic-brain-injury-tbi), licensed under CC0: Public Domain. This dataset contains the number diagnosed in the category of severity and type of TBI, as well as the year of observation as well as military branch and whether or not the individual was active duty.
     
+
+**Note on `bgms` Dataset Licensing**
+
+Although the `bgms` package is overall licensed under **GPL (>= 2)**, its `DESCRIPTION` file explicitly states in the **Copyright** field:
+
+> *"Includes datasets 'ADHD' and 'Boredom', which are licensed under CC-BY 4. See individual data documentation for license and citation."*
+
+Therefore, the original `ADHD` dataset is covered by the **CC-BY 4.0** license.
+
+
+**Note on `rcollectadhd` Data Sources**
+
+The `rcollectadhd` package description explicitly notes that its datasets are compiled from multiple external sources, including **CRAN packages** and public repositories like **Kaggle** (`http://www.kaggle.com/`). 
+
+Additionally, it highlights that the datasets and their descriptions in `rcollectadhd` may have been modified or adapted from their original versions on CRAN or Kaggle to align with the package's focused collection on ADHD research.
+
 
 ## License
 
-All datasets in this package are provided under the same licenses as their original sources. The licensing information and any specific attribution required for each dataset can be found within their respective packages. The user must adhere to the licensing terms specified by each original source.
+All datasets included in `NeuroDataSets` are provided under their respective original licenses, as documented in `LICENSES_DETAILS.md`. The original content and structure of these datasets have not been altered in any way. Users must comply with the licensing terms specified by each original source.
 
-This package, `NeuroDataSets`, is licensed under the GPL-3 License.
+This package, `NeuroDataSets`, is licensed under the GPL (>= 2) | GPL-3 license.

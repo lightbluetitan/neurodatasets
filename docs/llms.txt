@@ -1,0 +1,246 @@
+# NeuroDataSets
+
+[![CRAN
+status](https://www.r-pkg.org/badges/version/NeuroDataSets)](https://CRAN.R-project.org/package=NeuroDataSets)
+[![License: GPL (\>= 2) \|
+GPL-3](https://img.shields.io/badge/License-GPL%20(%3E%3D%202)%20%7C%20GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![CRAN
+downloads](https://cranlogs.r-pkg.org/badges/NeuroDataSets)](https://cran.r-project.org/package=NeuroDataSets)
+[![CRAN total
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/NeuroDataSets)](https://cran.r-project.org/package=NeuroDataSets)
+
+------------------------------------------------------------------------
+
+The `NeuroDataSets` package offers a rich and diverse collection of
+datasets focused on the brain, the nervous system, and neurological and
+psychiatric disorders. It includes comprehensive data on conditions such
+as **Parkinson’s disease, Alzheimer’s disease, dementia, epilepsy,
+schizophrenia, autism spectrum disorder, attention deficit hyperactivity
+disorder (ADHD), Tourette’s syndrome, traumatic brain injury, gliomas,
+migraines, headaches, sleep disorders, concussions, encephalitis,
+subarachnoid hemorrhage, and mental health conditions**.
+
+The package contains a wide variety of data types, including clinical,
+experimental, neuroimaging, behavioral, cognitive, and simulated
+datasets. These datasets encompass **structural and functional brain
+data, cross-sectional and longitudinal MRI imaging studies,
+neurotransmission metrics, gene expression profiles, cognitive
+performance assessments, intelligence metrics, sleep deprivation
+effects, treatment outcomes, brain-body relationships across species,
+neurological injury patterns, and acupuncture interventions**.
+
+## Installation
+
+You can install the `NeuroDataSets` package from CRAN with the following
+R function:
+
+``` r
+
+
+install.packages("NeuroDataSets")
+```
+
+You can install `NeuroDataSets` package from its GitHub repository with
+the following R function:
+
+``` r
+
+
+devtools::install_github("lightbluetitan/neurodatasets")
+```
+
+## Load the Package
+
+``` r
+
+
+library(NeuroDataSets)
+```
+
+## Dataset Suffixes
+
+Each dataset in the `NeuroDataSets` package uses a `suffix` to denote
+the type of R object:
+
+- `_df`: A data frame
+
+- `_list`: A list
+
+- `_tbl_df`: A tibble
+
+- `_matrix`: A matrix
+
+## Example Datasets
+
+Below are selected example datasets included in the `NeuroDataSets`
+package:
+
+- `subcortical_patterns_tbl_df`: Patterns of Subcortical Structures.
+
+- `WMpatterns_tbl_df`: Expected Patterns of White Matter.
+
+- `hippocampus_lesions_df`: Memory and the Hippocampus.
+
+## Example Code:
+
+``` r
+
+
+# Load the package
+
+library(NeuroDataSets)
+
+# List all datasets in the package
+
+view_datasets_NeuroDataSets()
+
+# Load dataset
+
+data(WMpatterns_tbl_df)
+
+# Preview the dataset
+
+head(WMpatterns_tbl_df)
+
+# Open in Viewer
+
+View(WMpatterns_tbl_df)
+```
+
+## License
+
+All datasets in this package are provided under their respective
+original licenses, as documented in `LICENSES_DETAILS.md`. Users must
+comply with the licensing terms specified by each original source.
+
+This package, `NeuroDataSets`, is licensed under the **GPL (\>= 2) \|
+GPL-3** license.
+
+# Package index
+
+## All functions
+
+- [`aba_phenotype_data_df`](https://lightbluetitan.github.io/neurodatasets/reference/aba_phenotype_data_df.md)
+  : Allen Brain Atlas Phenotype Data
+- [`ability_intelligence_list`](https://lightbluetitan.github.io/neurodatasets/reference/ability_intelligence_list.md)
+  : Ability and Intelligence Tests
+- [`acupuncture_df`](https://lightbluetitan.github.io/neurodatasets/reference/acupuncture_df.md)
+  : Acupuncture Therapy for Chronic Headache
+- [`ADHD_df`](https://lightbluetitan.github.io/neurodatasets/reference/ADHD_df.md)
+  : ADHD Symptom Checklist for Children Aged 6–8 Years
+- [`adolescent_mental_health_df`](https://lightbluetitan.github.io/neurodatasets/reference/adolescent_mental_health_df.md)
+  : Adolescent Mental Health Study
+- [`AD_biomarkers_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/AD_biomarkers_tbl_df.md)
+  : Alzheimer's Biomarkers
+- [`alzheimer_smoking_df`](https://lightbluetitan.github.io/neurodatasets/reference/alzheimer_smoking_df.md)
+  : Smoking and Alzheimer's Disease
+- [`ASD_risks_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/ASD_risks_tbl_df.md)
+  : Autism Spectrum Disorder (ASD) Risk Factors in Children
+- [`bilingual_brains_df`](https://lightbluetitan.github.io/neurodatasets/reference/bilingual_brains_df.md)
+  : Brain Structure in Bilingual Humans
+- [`blood_brain_barrier_df`](https://lightbluetitan.github.io/neurodatasets/reference/blood_brain_barrier_df.md)
+  : Blood-Brain Barrier
+- [`brainexpression_df`](https://lightbluetitan.github.io/neurodatasets/reference/brainexpression_df.md)
+  : Proteolipid Protein 1 Gene Expression in Brain Tissue
+- [`brains_cognitive_matrix`](https://lightbluetitan.github.io/neurodatasets/reference/brains_cognitive_matrix.md)
+  : BRAiNS Cohort Cognitive States Matrix
+- [`brainvolume_df`](https://lightbluetitan.github.io/neurodatasets/reference/brainvolume_df.md)
+  : Meta-Analysis on Human Brain Volume and Intelligence
+- [`brain_litter_mammals_df`](https://lightbluetitan.github.io/neurodatasets/reference/brain_litter_mammals_df.md)
+  : Mammal Brain Size and Litter Size Relationship
+- [`brain_size_iq_df`](https://lightbluetitan.github.io/neurodatasets/reference/brain_size_iq_df.md)
+  : Brain Size and IQ Study Data
+- [`brain_string_players_df`](https://lightbluetitan.github.io/neurodatasets/reference/brain_string_players_df.md)
+  : Brain Activity in String Players
+- [`cerebellar_age_df`](https://lightbluetitan.github.io/neurodatasets/reference/cerebellar_age_df.md)
+  : Repeated Measurements of Age and Cerebellar Volume
+- [`chimpbrains_df`](https://lightbluetitan.github.io/neurodatasets/reference/chimpbrains_df.md)
+  : Brodmann's Area 44 Asymmetry in Chimpanzees
+- [`cocaine_dopamine_df`](https://lightbluetitan.github.io/neurodatasets/reference/cocaine_dopamine_df.md)
+  : Effects of Cocaine on Dopamine Receptors
+- [`DA_schizophrenia_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/DA_schizophrenia_tbl_df.md)
+  : DBH in Schizophrenia
+- [`dementia_df`](https://lightbluetitan.github.io/neurodatasets/reference/dementia_df.md)
+  : Dementia Scores Dataset
+- [`encephalitis_df`](https://lightbluetitan.github.io/neurodatasets/reference/encephalitis_df.md)
+  : Cases of Herpes Encephalitis in Bavaria and Saxony
+- [`epilepsy_drug_qol_df`](https://lightbluetitan.github.io/neurodatasets/reference/epilepsy_drug_qol_df.md)
+  : SANAD Epilepsy Drug Treatment Quality of Life Study
+- [`epilepsy_drug_trial_df`](https://lightbluetitan.github.io/neurodatasets/reference/epilepsy_drug_trial_df.md)
+  : Epileptic Seizures Clinical Drug Trial
+- [`epilepsy_RCT_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/epilepsy_RCT_tbl_df.md)
+  : Epilepsy Treatment Randomized Controlled Trial
+- [`gm_expected_patterns_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/gm_expected_patterns_tbl_df.md)
+  : Patterns of Gray Matter in Schizophrenia
+- [`guineapig_neuro_df`](https://lightbluetitan.github.io/neurodatasets/reference/guineapig_neuro_df.md)
+  : Guinea Pig Neural Data
+- [`hippocampus_lesions_df`](https://lightbluetitan.github.io/neurodatasets/reference/hippocampus_lesions_df.md)
+  : Memory and the Hippocampus
+- [`iq_country_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/iq_country_tbl_df.md)
+  : Average Global IQ per Country
+- [`mammals_brain_body_df`](https://lightbluetitan.github.io/neurodatasets/reference/mammals_brain_body_df.md)
+  : Mammal Brain and Body Size
+- [`markers_brain_df`](https://lightbluetitan.github.io/neurodatasets/reference/markers_brain_df.md)
+  : Cross-Species Brain Cell Marker Genes
+- [`markers_human_brain_df`](https://lightbluetitan.github.io/neurodatasets/reference/markers_human_brain_df.md)
+  : Human Brain Cell Marker Genes
+- [`markers_mouse_brain_df`](https://lightbluetitan.github.io/neurodatasets/reference/markers_mouse_brain_df.md)
+  : Mouse Brain Cell Marker Genes
+- [`migraines_df`](https://lightbluetitan.github.io/neurodatasets/reference/migraines_df.md)
+  : Effects of Transcranial Magnetic Stimulation on Migraine Headaches
+- [`migraine_treatment_df`](https://lightbluetitan.github.io/neurodatasets/reference/migraine_treatment_df.md)
+  : Migraine Headache Treatment
+- [`migrane_dose_df`](https://lightbluetitan.github.io/neurodatasets/reference/migrane_dose_df.md)
+  : Migraine Dose–Response Trial Data
+- [`neanderthal_brains_df`](https://lightbluetitan.github.io/neurodatasets/reference/neanderthal_brains_df.md)
+  : Cranial Capacity in Neanderthals and Modern Humans
+- [`NeuroDataSets`](https://lightbluetitan.github.io/neurodatasets/reference/NeuroDataSets.md)
+  [`NeuroDataSets-package`](https://lightbluetitan.github.io/neurodatasets/reference/NeuroDataSets.md)
+  : NeuroDataSets: A Comprehensive Collection of Neuroscience and
+  Brain-Related Datasets
+- [`neurodeg_dose_df`](https://lightbluetitan.github.io/neurodatasets/reference/neurodeg_dose_df.md)
+  : Simulated Neurodegenerative Disease Dose Data
+- [`neuro_pointprocess_matrix`](https://lightbluetitan.github.io/neurodatasets/reference/neuro_pointprocess_matrix.md)
+  : Neurophysiological Point Process Data
+- [`nfl_concussions_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/nfl_concussions_tbl_df.md)
+  : Concussions in the National Football League (2012–2014)
+- [`OASIS_cross_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/OASIS_cross_tbl_df.md)
+  : Cross-sectional Brain MRI Data Across Adult Lifespan
+- [`OASIS_long_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/OASIS_long_tbl_df.md)
+  : Longitudinal MRI Data in Nondemented and Demented Older Adults
+- [`parkinsons_dopamine_list`](https://lightbluetitan.github.io/neurodatasets/reference/parkinsons_dopamine_list.md)
+  : Dopamine Agonists as Adjunct Therapy in Parkinson’s
+- [`pediatric_glioma_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/pediatric_glioma_tbl_df.md)
+  : Pediatric High-Grade Glioma Clinical Dataset
+- [`psych_neurocog_df`](https://lightbluetitan.github.io/neurodatasets/reference/psych_neurocog_df.md)
+  : Psychotic Cognition
+- [`SAHemorrhage_df`](https://lightbluetitan.github.io/neurodatasets/reference/SAHemorrhage_df.md)
+  : Subarachnoid Hemorrhage Clinical and Laboratory Data
+- [`sleep_deprivation_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/sleep_deprivation_tbl_df.md)
+  : Sleep Deprivation and Cognitive Performance Data
+- [`sleep_disorder_df`](https://lightbluetitan.github.io/neurodatasets/reference/sleep_disorder_df.md)
+  : Transient Sleep Disorder Polysomnography Scoring Data
+- [`sleep_performance_df`](https://lightbluetitan.github.io/neurodatasets/reference/sleep_performance_df.md)
+  : Sleep and Learning Performance
+- [`subcortical_patterns_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/subcortical_patterns_tbl_df.md)
+  : Patterns of Subcortical Structures
+- [`TBI_age_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/TBI_age_tbl_df.md)
+  : Traumatic Brain Injury (TBI) Cases by Age Group and Injury Mechanism
+- [`TBI_military_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/TBI_military_tbl_df.md)
+  : Traumatic Brain Injury (TBI) in U.S. Military Personnel
+- [`TBI_steroids_df`](https://lightbluetitan.github.io/neurodatasets/reference/TBI_steroids_df.md)
+  : Corticosteroids in Acute Traumatic Brain Injury
+- [`tourette_ADHD_df`](https://lightbluetitan.github.io/neurodatasets/reference/tourette_ADHD_df.md)
+  : Attentional Dysfunction in Adults With Tourette’s Syndrome
+- [`view_datasets_NeuroDataSets()`](https://lightbluetitan.github.io/neurodatasets/reference/view_datasets_NeuroDataSets.md)
+  : View Available Datasets in NeuroDataSets
+- [`WMpatterns_tbl_df`](https://lightbluetitan.github.io/neurodatasets/reference/WMpatterns_tbl_df.md)
+  : White Matter Patterns
+
+# Articles
+
+### All vignettes
+
+- [NeuroDataSets: A Comprehensive Collection of Neuroscience and
+  Brain-Related
+  Datasets](https://lightbluetitan.github.io/neurodatasets/articles/introduction_to_neurodatasets.md):

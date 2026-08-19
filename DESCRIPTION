@@ -1,7 +1,7 @@
 Package: NeuroDataSets
 Type: Package
 Title: A Comprehensive Collection of Neuroscience and Brain-Related Datasets
-Version: 0.3.0
+Version: 0.3.1
 Maintainer: Renzo Caceres Rossi <arenzocaceresrossi@gmail.com>
 Description: Offers a rich and diverse collection of datasets focused on the brain, nervous system, and related disorders. 
     The package includes clinical, experimental, neuroimaging, behavioral, cognitive, and simulated data on conditions such as 
@@ -13,7 +13,12 @@ Description: Offers a rich and diverse collection of datasets focused on the bra
     clinical trials, military health records, sports injury databases, and international comparative studies.
     Designed for researchers, neuroscientists, clinicians, psychologists, data scientists, and students, this package facilitates exploratory data analysis, 
     statistical modeling, and hypothesis testing in neuroscience and neuroepidemiology.
-License: GPL-3
+    The package includes datasets originally distributed in other R packages as
+    well as open data repositories such as Kaggle. Original package authors and
+    contributors are acknowledged in Authors@R. All datasets—including those from
+    R source packages and Kaggle, along with their respective authors and
+    licensing terms—are fully documented in LICENSES_DETAILS.md.
+License: GPL (>= 2) | GPL-3
 Language: en
 URL: https://github.com/lightbluetitan/neurodatasets, https://lightbluetitan.github.io/neurodatasets/
 BugReports: https://github.com/lightbluetitan/neurodatasets/issues
@@ -28,14 +33,692 @@ Suggests:
 Depends: R (>= 4.1.0)
 Imports:
     utils
-Authors@R: 
+Authors@R: c(
     person(
         given = "Renzo",
         family = "Caceres Rossi",
         role = c("aut", "cre"),
         email = "arenzocaceresrossi@gmail.com",
         comment = c(ORCID = "0009-0005-0744-854X")
+    ),
+    person(
+        given = "Michael",
+        family = "Seo",
+        role = "ctb",
+        email = "swj8874@gmail.com",
+        comment = "Author and maintainer of the original bnma package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Christopher",
+        family = "Schmid",
+        role = "ctb",
+        email = "christopher_schmid@brown.edu",
+        comment = "Author of the original bnma package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Si",
+        family = "Gao",
+        role = "ctb",
+        email = c("iamgaosi@yahoo.com", "Si.Gao@uth.tmc.edu"),
+        comment = "Author and maintainer of the original RVIpkg package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Peter",
+        family = "Kochunov",
+        role = c("ctb", "cph"),
+        email = "peter.kochunov@uth.tmc.edu",
+        comment = "Author, data contributor, funder and copyright holder of the original RVIpkg package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Kathryn",
+        family = "Hatch",
+        role = "ctb",
+        email = "khatchal@gmail.com",
+        comment = "Contributor to the original RVIpkg package (testing and data collection)."
+    ),
+    person(
+        given = "Yizhou",
+        family = "Ma",
+        role = "ctb",
+        email = "yizhou.ma@uth.tmc.edu",
+        comment = "Contributor to the original RVIpkg package (testing, method development and data collection)."
+    ),
+    person(
+        given = "Fatima",
+        family = "Talib",
+        role = "ctb",
+        email = "fatal1@umbc.edu",
+        comment = "Contributor to the original RVIpkg package (testing and method)."
+    ),
+    person(
+        given = "Kevin M.",
+        family = "Middleton",
+        role = "ctb",
+        email = "middletonk@missouri.edu",
+        comment = "Author and maintainer of the original abd package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Randall",
+        family = "Pruim",
+        role = "ctb",
+        email = "rpruim@calvin.edu",
+        comment = c(
+            "Author of the original abd package; original dataset included in NeuroDataSets.",
+            "Also contributed corrections to the original Sleuth3 package."
+        )
+    ),
+    person(
+        given = "Max",
+        family = "Kuhn",
+        role = "ctb",
+        email = "max@posit.co",
+        comment = "Author and maintainer of the original modeldata package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Posit Software, PBC",
+        role = c("ctb", "cph"),
+        comment = c(ROR = "03wc8by49", "Copyright holder and funder of the original modeldata package; original dataset included in NeuroDataSets.")
+    ),
+    person(
+        given = "Torsten",
+        family = "Hothorn",
+        role = "ctb",
+        email = "Torsten.Hothorn@R-project.org",
+        comment = c(
+            ORCID = "0000-0001-8301-0471",
+            "Author and maintainer of the original coin package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Henric",
+        family = "Winell",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0001-7995-3047",
+            "Author of the original coin package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Kurt",
+        family = "Hornik",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0003-4198-9911",
+            "Author of the original coin package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Mark A.",
+        family = "van de Wiel",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0003-4780-8472",
+            "Author of the original coin package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Achim",
+        family = "Zeileis",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0003-0918-3766",
+            "Author of the original coin package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Pei",
+        family = "Wang",
+        role = "ctb",
+        email = "wangp33@miamioh.edu",
+        comment = "Author and maintainer of the original RRMLRfMC package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Richard",
+        family = "Kryscio",
+        role = "ctb",
+        comment = "Author of the original RRMLRfMC package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Angelo",
+        family = "Canty",
+        role = "ctb",
+        email = "cantya@mcmaster.ca",
+        comment = "Author of the original boot package (original code for S); original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Brian",
+        family = "Ripley",
+        role = "ctb",
+        email = "Brian.Ripley@R-project.org",
+        comment = "Author (conversion of the original S code to R, author of parallel support) and former maintainer (1999-2022) of the original boot package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Alessandra R.",
+        family = "Brazzale",
+        role = "ctb",
+        email = "brazzale@stat.unipd.it",
+        comment = "Maintainer and contributor (minor bug fixes) of the original boot package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Daphna",
+        family = "Harel",
+        role = "ctb",
+        email = "daphna.harel@gmail.com",
+        comment = "Author and maintainer of the original sur package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Sharon",
+        family = "Weinberg",
+        role = "ctb",
+        email = "sharon.weinberg@nyu.edu",
+        comment = "Contributor to the original sur package."
+    ),
+    person(
+        given = "Sarah",
+        family = "Abramowitz",
+        role = "ctb",
+        email = "sabramow@drew.edu",
+        comment = "Contributor to the original sur package."
+    ),
+    person(
+        given = "F.L.",
+        family = "Ramsey",
+        role = "ctb",
+        comment = "Original author of datasets in the Sleuth3 package."
+    ),
+    person(
+        given = "D.W.",
+        family = "Schafer",
+        role = "ctb",
+        comment = "Original author of datasets in the Sleuth3 package."
+    ),
+    person(
+        given = "Daniel W.",
+        family = "Schafer",
+        role = "ctb",
+        comment = "Contributor/modifier of the original Sleuth3 package."
+    ),
+    person(
+        given = "Jeannie",
+        family = "Sifneos",
+        role = "ctb",
+        comment = "Contributor/modifier of the original Sleuth3 package."
+    ),
+    person(
+        given = "Berwin A.",
+        family = "Turlach",
+        role = "ctb",
+        email = "Berwin.Turlach@gmail.com",
+        comment = "Contributor, maintainer and modifier of the original Sleuth3 package."
+    ),
+    person(
+        given = "Nicholas",
+        family = "Horton",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Linda",
+        family = "Loi",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Kate",
+        family = "Aloisio",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Ruobing",
+        family = "Zhang",
+        role = "ctb",
+        comment = "Vignette contributor to the original Sleuth3 package."
+    ),
+    person(
+        given = "Graeme L.",
+        family = "Hickey",
+        role = "ctb",
+        email = "graemeleehickey@gmail.com",
+        comment = c(
+            ORCID = "0000-0002-4989-0054",
+            "Author and maintainer of the original joineRML package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Pete",
+        family = "Philipson",
+        role = "ctb",
+        email = "peter.philipson1@newcastle.ac.uk",
+        comment = c(
+            ORCID = "0000-0001-7846-0208",
+            "Author of the original joineRML package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Andrea",
+        family = "Jorgensen",
+        role = "ctb",
+        email = "aljorgen@liverpool.ac.uk",
+        comment = c(
+            ORCID = "0000-0002-6977-9337",
+            "Contributor to the original joineRML package."
+        )
+    ),
+    person(
+        given = "Ruwanthi",
+        family = "Kolamunnage-Dona",
+        role = "ctb",
+        email = "kdrr@liverpool.ac.uk",
+        comment = c(
+            ORCID = "0000-0003-3886-6208",
+            "Author of the original joineRML package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Paula",
+        family = "Williamson",
+        role = "ctb",
+        email = "p.r.williamson@liverpool.ac.uk",
+        comment = c(
+            ORCID = "0000-0001-9802-6636",
+            "Contributor to the original joineRML package."
+        )
+    ),
+    person(
+        given = "Dimitris",
+        family = "Rizopoulos",
+        role = "ctb",
+        email = "d.rizopoulos@erasmusmc.nl",
+        comment = "Data contributor to the original joineRML package (data/renal.rda); also contributed code (R/hessian.R, R/vcov.R)."
+    ),
+    person(
+        given = "Alessandro",
+        family = "Gasparini",
+        role = "ctb",
+        email = "alessandro.gasparini@ki.se",
+        comment = c(
+            ORCID = "0000-0002-8319-7624",
+            "Author of the original joineRML package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Julian",
+        family = "Faraway",
+        role = "ctb",
+        email = "jjf23@bath.ac.uk",
+        comment = "Author and maintainer of the original faraway package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Andrew",
+        family = "McKenzie",
+        role = "ctb",
+        email = "amckenz@gmail.com",
+        comment = "Author and maintainer of the original BRETIGEA package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Minghui",
+        family = "Wang",
+        role = "ctb",
+        comment = "Author of the original BRETIGEA package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Bin",
+        family = "Zhang",
+        role = "ctb",
+        comment = "Author of the original BRETIGEA package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Josie",
+        family = "Athens",
+        role = "ctb",
+        email = "josie.athens@gmail.com",
+        comment = "Author and maintainer of the original pubh package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Frank",
+        family = "Harell",
+        role = "ctb",
+        email = "f.harrell@vanderbilt.edu",
+        comment = "Contributor to the original pubh package."
+    ),
+    person(
+        given = "John",
+        family = "Fox",
+        role = "ctb",
+        email = "jfox@mcmaster.ca",
+        comment = c(
+            ORCID = "0000-0002-1196-8012",
+            "Author of the original carData and heplots packages, and contributor to the original pubh package; original datasets included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "R-Core",
+        role = "ctb",
+        comment = "Contributor to the original pubh package."
+    ),
+    person(
+        given = "Michael",
+        family = "Friendly",
+        role = "ctb",
+        email = "friendly@yorku.ca",
+        comment = c(
+            ORCID = "0000-0002-3237-0941",
+            "Author and maintainer of the original heplots package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Georges",
+        family = "Monette",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0003-0076-5532",
+            "Author of the original heplots package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Phil",
+        family = "Chalmers",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0001-5332-2810",
+            "Contributor to the original heplots package."
+        )
+    ),
+    person(
+        given = "Duncan",
+        family = "Murdoch",
+        role = "ctb",
+        comment = "Contributor to the original heplots package."
+    ),
+    person(
+        given = "Sanford",
+        family = "Weisberg",
+        role = "ctb",
+        email = "sandy@umn.edu",
+        comment = "Author of the original carData package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Brad",
+        family = "Price",
+        role = "ctb",
+        email = "brad.price@mail.wvu.edu",
+        comment = "Author and maintainer of the original carData package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Alan T.",
+        family = "Arnholt",
+        role = "ctb",
+        email = "arnholtat@appstate.edu",
+        comment = "Author and maintainer of the original BSDA package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Ben",
+        family = "Evans",
+        role = "ctb",
+        email = "ben.evans@temple.edu",
+        comment = "Author of the original BSDA package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Przemyslaw",
+        family = "Biecek",
+        role = "ctb",
+        email = "przemyslaw.biecek@gmail.com",
+        comment = "Author and maintainer of the original PBImisc package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Maarten",
+        family = "Marsman",
+        role = "ctb",
+        email = "m.marsman@uva.nl",
+        comment = c(
+            ORCID = "0000-0001-5309-7502",
+            "Author and maintainer of the original bgms package; original datasets included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Don",
+        family = "van den Bergh",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0002-9838-7308",
+            "Author of the original bgms package; original datasets included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Nikola",
+        family = "Sekulovski",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0001-7032-1684",
+            "Contributor to the original bgms package."
+        )
+    ),
+    person(
+        given = "Giuseppe",
+        family = "Arena",
+        role = "ctb",
+        comment = c(
+            ORCID = "0000-0001-5204-3326",
+            "Contributor to the original bgms package."
+        )
+    ),
+    person(
+        given = "Laura",
+        family = "Groot",
+        role = "ctb",
+        comment = "Contributor to the original bgms package."
+    ),
+    person(
+        given = "Gali",
+        family = "Geller",
+        role = "ctb",
+        comment = "Contributor to the original bgms package."
+    ),
+    person(
+        given = "Jonathan Z.",
+        family = "Bakdash",
+        role = "ctb",
+        email = "jbakdash@gmail.com",
+        comment = c(
+            ORCID = "0000-0002-1409-4779",
+            "Author of the original rmcorr package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Laura R.",
+        family = "Marusich",
+        role = "ctb",
+        email = "lmarusich@gmail.com",
+        comment = c(
+            ORCID = "0000-0002-3524-6110",
+            "Author and maintainer of the original rmcorr package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "John",
+        family = "Nolan",
+        role = "ctb",
+        email = "john.mccabe.nolan@outlook.com",
+        comment = "Author and maintainer of the original rcollectadhd package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Gunther",
+        family = "Schauberger",
+        role = "ctb",
+        email = "gunther.schauberger@tum.de",
+        comment = "Author and maintainer of the original catdata package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Gerhard",
+        family = "Tutz",
+        role = "ctb",
+        comment = "Author of the original catdata package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Zhicheng",
+        family = "Du",
+        role = "ctb",
+        email = "dgdzc@hotmail.com",
+        comment = "Author and maintainer of the original reportROC package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Yuantao",
+        family = "Hao",
+        role = "ctb",
+        comment = "Author of the original reportROC package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Michael",
+        family = "Kossmeier",
+        role = "ctb",
+        email = "michael.kossmeier@univie.ac.at",
+        comment = "Author and maintainer of the original metaviz package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Ulrich S.",
+        family = "Tran",
+        role = "ctb",
+        email = "ulrich.tran@univie.ac.at",
+        comment = "Author of the original metaviz package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Martin",
+        family = "Voracek",
+        role = "ctb",
+        email = "martin.voracek@univie.ac.at",
+        comment = "Author of the original metaviz package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Pete",
+        family = "Laud",
+        role = "ctb",
+        email = "pete@sheffstat.co.uk",
+        comment = c(
+            ORCID = "0000-0002-3766-7090",
+            "Author and maintainer of the original ratesci package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Ann",
+        family = "Cannon",
+        role = "ctb",
+        comment = "Author of datasets in the original Stat2Data package."
+    ),
+    person(
+        given = "George",
+        family = "Cobb",
+        role = "ctb",
+        comment = "Author of datasets in the original Stat2Data package."
+    ),
+    person(
+        given = "Bradley",
+        family = "Hartlaub",
+        role = "ctb",
+        comment = "Author of datasets in the original Stat2Data package."
+    ),
+    person(
+        given = "Julie",
+        family = "Legler",
+        role = "ctb",
+        comment = "Author of datasets in the original Stat2Data package."
+    ),
+    person(
+        given = "Robin",
+        family = "Lock",
+        role = "ctb",
+        email = "rlock@stlawu.edu",
+        comment = "Author and maintainer of the original Stat2Data package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Thomas",
+        family = "Moore",
+        role = "ctb",
+        comment = "Author of datasets in the original Stat2Data package."
+    ),
+    person(
+        given = "Allan",
+        family = "Rossman",
+        role = "ctb",
+        comment = "Author of datasets in the original Stat2Data package."
+    ),
+    person(
+        given = "Jeffrey",
+        family = "Witmer",
+        role = "ctb",
+        comment = "Author of datasets in the original Stat2Data package."
+    ),
+    person(
+        given = "Jason L.",
+        family = "Oke",
+        role = c("ctb", "cph"),
+        email = "jasonoke98@gmail.com",
+        comment = c(
+            ORCID = "0000-0003-3467-6677",
+            "Author, maintainer and copyright holder of the original R4HCR package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Bjoern",
+        family = "Bornkamp",
+        role = "ctb",
+        email = "bjoern.bornkamp@novartis.com",
+        comment = c(
+            ORCID = "0000-0002-6294-8185",
+            "Author of the original DoseFinding package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Jose",
+        family = "Pinheiro",
+        role = "ctb",
+        comment = "Author of the original DoseFinding package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Frank",
+        family = "Bretz",
+        role = "ctb",
+        comment = "Author of the original DoseFinding package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Ludger",
+        family = "Sandig",
+        role = "ctb",
+        comment = "Author of the original DoseFinding package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Marius",
+        family = "Thomas",
+        role = "ctb",
+        email = "marius.thomas@novartis.com",
+        comment = "Author and maintainer of the original DoseFinding package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Daniel",
+        family = "Sabanes Bove",
+        role = "ctb",
+        email = "daniel.sabanes_bove@rconis.com",
+        comment = c(
+            ORCID = "0000-0002-0176-9239",
+            "Author of the original DoseFinding package; original dataset included in NeuroDataSets."
+        )
+    ),
+    person(
+        given = "Novartis Pharma AG",
+        role = c("ctb", "cph"),
+        comment = "Copyright holder and funder of the original DoseFinding package; original dataset included in NeuroDataSets."
+    ),
+    person(
+        given = "Felipe",
+        family = "Osorio",
+        role = "ctb",
+        email = "felipe.osorios@usm.cl",
+        comment = c(
+            ORCID = "0000-0002-4675-5201",
+            "Author and maintainer of the original MVT package; original dataset included in NeuroDataSets."
+        )
     )
-RoxygenNote: 7.3.2
+    )
 Config/testthat/edition: 3
 VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0

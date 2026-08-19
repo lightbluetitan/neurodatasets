@@ -1,3 +1,15 @@
+# NeuroDataSets 0.3.1
+
+## Documentation & Metadata Updates
+
+- Updated package version to `0.3.1` in `DESCRIPTION` and R script headers.
+- Refined license specification to `GPL (>= 2) | GPL-3`.
+- Expanded author attributions and copyright references in `Authors@R`.
+- Updated dataset licensing details and source acknowledgments in `LICENSES_DETAILS.md` and `LICENSE.md`.
+
+---
+
+
 # NeuroDataSets 0.3.0
 
 ## Breaking Changes
