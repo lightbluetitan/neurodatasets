@@ -17,7 +17,7 @@ Description: Offers a rich and diverse collection of datasets focused on the bra
     well as open data repositories such as Kaggle. Original package authors and
     contributors are acknowledged in Authors@R. All datasets—including those from
     R source packages and Kaggle, along with their respective authors and
-    licensing terms—are fully documented in LICENSES_DETAILS.md.
+    licensing terms—are fully documented in the 'LICENSES_DETAILS' file.
 License: GPL (>= 2) | GPL-3
 Language: en
 URL: https://github.com/lightbluetitan/neurodatasets, https://lightbluetitan.github.io/neurodatasets/

@@ -1,7 +1,7 @@
 # NeuroDataSets
 
 [![CRAN status](https://www.r-pkg.org/badges/version/NeuroDataSets)](https://CRAN.R-project.org/package=NeuroDataSets)
-[![License: GPL (>= 2) | GPL-3](https://img.shields.io/badge/License-GPL%20(%3E%3D%202)%20%7C%20GPL--3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![License: GPL (>= 2) | GPL-3](https://img.shields.io/badge/License-GPL%20(%3E%3D%202)%20%7C%20GPL--3-blue.svg)](https://cran.r-project.org/web/licenses/)
 [![CRAN downloads](https://cranlogs.r-pkg.org/badges/NeuroDataSets)](https://cran.r-project.org/package=NeuroDataSets)
 [![CRAN total downloads](https://cranlogs.r-pkg.org/badges/grand-total/NeuroDataSets)](https://cran.r-project.org/package=NeuroDataSets)
 
